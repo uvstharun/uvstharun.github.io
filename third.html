@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vishnu Sai - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"><span>V</span>ishnu</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="index.html#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="index.html#myprojects-section" class="nav-link"><span>My Projects</span></a></li>
+	          <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <div class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+          <div class="col-lg-10 ftco-animate d-flex align-items-center">
+          	<div class="text text-center">
+          		<h1 class="mb-3 bread">Default of Credit Card Client Analysis</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="blog.html">My Projects <i class="ion-ios-arrow-forward"></i></a></span> <span>Default of Credit C... <i class="ion-ios-arrow-forward"></i></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+		
+		<section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 ftco-animate">
+            <h2 class="mb-3"> Credit Card Default Prediction: Unlocking Credit Risk with Machine Learning</h2>
+            <p>Managing credit risk is a critical aspect of the financial industry, and predicting credit card default is one of the most challenging tasks in this domain. In this project, I explore various machine learning techniques to predict the likelihood of credit card default among clients, providing valuable insights into risk management. By comparing the performance of four different models, I aim to provide data-driven recommendations to improve creditworthiness assessments and help financial institutions make informed lending decisions.</p>
+            <p>
+              <img src="images/image_6.jpg" alt="" class="img-fluid">
+            </p>
+            <h2 class="mb-3"> Project Overview</h2>
+            <p>The objective of this project is to predict whether a client will default on their credit card payment for the next month. I implemented four machine learning models — Logistic Regression, K-Nearest Neighbors (KNN), Classification and Regression Trees (CART), and Random Forest — and analyzed each model’s effectiveness in terms of accuracy, sensitivity, and specificity. This comparison highlights which model performs best for credit risk management.</p>
+            
+            <h2 class="mb-3 mt-5">Models & Techniques</h2>
+
+                <h5 class="mt-4">Logistic Regression</h5>
+                <p>Used feature selection techniques such as Forward Selection, Backward Elimination, and Stepwise Selection with StepAIC.</p>
+                <p><strong>Key Insight:</strong> As the threshold for prediction decreases, sensitivity increases while specificity decreases. All feature selection methods returned similar accuracy results.</p>
+
+                <h5 class="mt-4">K-Nearest Neighbors (KNN)</h5>
+                <p>Optimized the K-value using cross-validation to find the best performance.</p>
+                <p><strong>Key Insight:</strong> KNN performed best with <strong>K = 161</strong>, balancing accuracy, sensitivity, and specificity.</p>
+
+                <h5 class="mt-4">Classification and Regression Trees (CART)</h5>
+                <p>Used complexity parameter pruning to prevent overfitting.</p>
+                <p><strong>Key Insight:</strong> The pruned tree generalized better, although the full tree initially had higher accuracy.</p>
+
+                <h5 class="mt-4">Random Forest</h5>
+                <p>Built an ensemble of decision trees for more robust predictions.</p>
+                <p><strong>Key Insight:</strong> Random Forest achieved the highest accuracy of <strong>99% on the training set</strong> and <strong>84% on the test set</strong>, making it the most accurate model overall.</p>
+                <h2 class="mb-3 mt-5"> Model Performance Summary</h2>
+                <table class="table table-bordered">
+                <thead>
+                    <tr>
+                    <th>Model</th>
+                    <th>Accuracy (Test Set)</th>
+                    <th>Sensitivity</th>
+                    <th>Specificity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Logistic Regression</td>
+                    <td>75.66%</td>
+                    <td>77.8%</td>
+                    <td>69.7%</td>
+                    </tr>
+                    <tr>
+                    <td>K-Nearest Neighbors (KNN)</td>
+                    <td>83.4%</td>
+                    <td>51.9%</td>
+                    <td>75.7%</td>
+                    </tr>
+                    <tr>
+                    <td>CART (Pruned)</td>
+                    <td>70.61%</td>
+                    <td>33.7%</td>
+                    <td>90.2%</td>
+                    </tr>
+                    <tr>
+                    <td>Random Forest</td>
+                    <td>84%</td>
+                    <td>76.4%</td>
+                    <td>83.3%</td>
+                    </tr>
+                </tbody>
+                </table>
+
+            <p><img src="images/image_7.jpg" alt="" class="img-fluid"></p>
+
+            <h2 class="mb-3 mt-5">Key Insights & Recommendations</h2>
+            <p><Strong>Logistic Regression:</Strong> Offers a balance between interpretability and performance, making it ideal for risk management.</p>
+            <p><Strong>Random Forest:</Strong> Provides the highest accuracy, making it suitable for large-scale credit default prediction.</p>
+            <p><Strong>KNN & CART</Strong> Require further tuning but can still provide valuable insights for smaller datasets or specific tasks.</p>
+
+            
+            <h2 class="mb-3 mt-5">Futuer Work</h2>
+            <p> In the future, the project can be enhanced by focusing on hyperparameter optimization, particularly for models like Random Forest and K-Nearest Neighbors (KNN), to fine-tune their performance and achieve higher accuracy. Additionally, using ensemble methods, such as combining multiple models, could lead to more robust predictions by leveraging the strengths of different algorithms. Finally, expanding the feature set by incorporating more financial or behavioral data can improve the model’s predictive power, leading to more accurate and reliable outcomes for credit risk assessment.</p>
+
+            <h2 class="mb-3 mt-5">Conclusion</h2>
+            <p>The Airline Reviews Sentiment Analysis project demonstrates how leveraging NLP techniques can provide airlines with powerful insights into customer satisfaction. By analyzing over 200,000 reviews, we identified critical pain points such as seat comfort, Wi-Fi connectivity, and cabin staff service, offering clear areas for improvement. The recommendations provided—ranging from ergonomic upgrades to better inflight entertainment—give airlines the opportunity to enhance the overall passenger experience. As the travel industry evolves, embracing data-driven strategies like this will be key to maintaining competitiveness and improving customer loyalty. This project not only highlights immediate opportunities for improvement but also sets the stage for further advancements in how airlines can use customer feedback to optimize their services.</p>
+            
+        
+              
+              <div class="comment-form-wrap pt-5">
+                <h3 class="mb-5">Leave a comment</h3>
+                <form action="#" class="p-5 bg-light">
+                  <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="website">Website</label>
+                    <input type="url" class="form-control" id="website">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
+                  </div>
+
+                </form>
+              </div>
+            </div>
+
+          
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Recent Projects</h3>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_5.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Airlines Reviews Sentiment Analysis</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> Dec 2023</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_6.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Default of Credit Card Client Analysis</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> May, 2023</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Brain Tumor Detection</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> March 2024</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </section> <!-- .section -->
+
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">Let’s Connect</h2>
+                <p>Whether you have a question, a project in mind, or just want to chat about data, I’m always open to conversations. Reach out, and let’s explore the possibilities together.</p>
+                <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                  <li class="ftco-animate"><a href="https://github.com/uvstharun"><span class="icon-github"></span></a></li>
+                  <li class="ftco-animate"><a href="https://www.linkedin.com/in/vishnusai29/"><span class="icon-linkedin"></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4 ml-md-4">
+                <h2 class="ftco-heading-2">Link</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Resume</a></li>
+                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2">Have a Questions?</h2>
+                  <div class="block-23 mb-3">
+                    <ul>
+                      <li><span class="icon icon-map-marker"></span><span class="text">Los Angeles, California, USA</span></a></li>
+                      <li><a href="#"><span class="icon icon-phone"></span><span class="text">+1-657-535-8717</span></a></li>
+                      <li><a href="#"><span class="icon icon-envelope"></span><span class="text">uppugundurit@gmail.com</span></a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
